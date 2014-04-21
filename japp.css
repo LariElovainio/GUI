@@ -1,0 +1,102 @@
+html {
+    background: #f3f4f5;
+    color: #444;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+.seats {
+    margin: 1em auto;
+    width: auto;
+}
+
+.seats > li {
+    border: .15em solid #ccc;
+    border-radius: .3em;
+    float: left;
+    height: 9em;
+    list-style: none;
+    margin: 2%;
+    padding: 1%;
+    position: relative;
+    width: 25%;
+}
+
+.seats > li:first-child {
+    margin-right: 33.5%;
+}
+
+.seats > li:nth-child(3) {
+    clear: left;
+}
+
+dl {
+    border-radius: .2em;
+    height: 96%;
+    margin: 0;
+    padding: 2%;
+}
+
+dl.warning {
+    background: #fc3500;
+    color: #fff;
+}
+
+dl.inactive {
+    background: #ddd;
+}
+
+.inactive dt,
+.inactive dd {
+    display: none;
+}
+
+dt:first-child,
+dd:first-of-type {
+    display: none;
+}
+
+dt {
+    font-weight: 500;
+}
+
+dd {
+    margin: 0;
+}
+
+.heartrate {
+    display: none;
+}
+
+.heartrate + dd {
+    background: #ccc;
+    bottom: 0;
+    color: #eee;
+    font-weight: 400;
+    height: 2em;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+.general {
+	clear: both;
+	margin: 1em auto;
+}
+
+.general output {
+	font-size: 2em;
+}
+
+output.numberOfPeople {
+	font-size: 6em;
+	font-weight: 100;
+}
+
+#map-canvas {
+	border: 1px solid rgba(0,0,0,.3);
+	height: 14em;
+	margin: 1em auto;
+	width: auto;
+}

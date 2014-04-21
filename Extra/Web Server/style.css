@@ -1,0 +1,62 @@
+body {
+	background: black;
+	color: white;
+	font: 16px/1.4 "Avenir Next", Avenir, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+	width: 100%;
+	}
+
+.screens > li {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: -100%;
+    transition: all .175s ease-out;
+    width: 100%;
+}
+
+.screens > li.active {
+    top: 0;
+}
+
+.error {
+	border-top: 1.5em solid #f23240;
+	-webkit-animation: pulse 4s infinite ease-in-out;
+	}
+
+@-webkit-keyframes pulse {
+	0% { border-color: rgba(255,32,40,0.2); }
+	50% { border-color: rgba(255,32,40,0.9); }
+	100% { border-color: rgba(255,32,40,0.2); }
+}
+
+.arrow {
+	font-size: 2em;
+	}
+
+.button.loading {
+	-webkit-animation: loadpulse 2s infinite;
+	transition: background-color .3s ease-in;
+}
+
+@-webkit-keyframes loadpulse {
+	0% {
+		background-color: rgba(18,222,103,0.2);
+		box-shadow: 0 0 1em rgba(18,222,103,0.05);
+		}
+	50% {
+		background-color: rgba(18,222,103,0.9);
+		box-shadow: 0 0 1em rgba(18,222,103,0.3);
+		}
+	100% {
+		background-color: rgba(18,222,103,0.2);
+		box-shadow: 0 0 1em rgba(18,222,103,0.05);
+		}
+}

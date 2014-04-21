@@ -1,0 +1,29 @@
+html {
+    background: #343639;
+    color: #ddd;
+    font-family: "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+div {
+    background: #3c3e43;
+    border: .15em solid #666;
+    border-radius: .3em;
+	float: left;
+    margin: 1%;
+    padding: 1%;
+    width: 29%;
+}
+
+div:first-child {
+    margin-right: 34%;
+}

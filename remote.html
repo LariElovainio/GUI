@@ -1,0 +1,89 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Remote</title>
+	<link rel="stylesheet" href="remote.css">
+</head>
+<body>
+	<h1>Remote</h1>
+	<form>
+		<div>
+			<h2>Seat 1</h2>
+			<label>
+				<input type="checkbox" id="s1-iu" class="s1 iu">
+				In use
+			</label>
+			<label>
+				Heart Rate
+				<input type="range" min="0" max="200" id="s1-hr" class="s1 hr">
+			</label>
+			<label>
+				User Status
+				<input type="text" id="s1-us" class="s1 us">
+			</label>
+		</div>
+		<div>
+			<h2>Seat 2</h2>
+			<label>
+				<input type="checkbox" id="s2-iu" class="s2 iu">
+				In use
+			</label>
+			<label>
+				Heart Rate
+				<input type="range" min="0" max="200" id="s2-hr" class="s2 hr">
+			</label>
+			<label>
+				User Status
+				<input type="text" id="s2-us" class="s2 us">
+			</label>
+		</div>
+		<div>
+			<h2>Seat 3</h2>
+			<label>
+				<input type="checkbox" id="s3-iu" class="s3 iu">
+				In use
+			</label>
+			<label>
+				Heart Rate
+				<input type="range" min="0" max="200" id="s3-hr" class="s3 hr">
+			</label>
+			<label>
+				User Status
+				<input type="text" id="s3-us" class="s3 us">
+			</label>
+		</div>
+		<div>
+			<h2>Seat 4</h2>
+			<label>
+				<input type="checkbox" id="s4-iu" class="s4 iu">
+				In use
+			</label>
+			<label>
+				Heart Rate
+				<input type="range" min="0" max="200" id="s4-hr" class="s4 hr">
+			</label>
+			<label>
+				User Status
+				<input type="text" id="s4-us" class="s4 us">
+			</label>
+		</div>
+		<div>
+			<h2>Seat 5</h2>
+			<label>
+				<input type="checkbox" id="s5-iu" class="s5 iu">
+				In use
+			</label>
+			<label>
+				Heart Rate
+				<input type="range" min="0" max="200" id="s5-hr" class="s5 hr">
+			</label>
+			<label>
+				User Status
+				<input type="text" id="s5-us" class="s5 us">
+			</label>
+		</div>
+	</form>
+	<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="remote.js"></script>
+</body>

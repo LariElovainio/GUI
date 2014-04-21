@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Audi Platform</title>
+</head>
+<body>
+	<ul class="screens">
+		<li>
+			<h1>Audi Crapform</h1>
+		</li>
+		<li>
+			<p>Good afternoon, Alan</p>
+		</li>
+		<li>
+			<h2>Heart Attack</h2>
+			<p>Car will stop now.</p>
+		</li>
+	</ul>
+	<script src="http://10.100.29.129:3000/socket.io/socket.io.js"></script>
+	<script>
+		console.log('Päällä');
+		var socket = io.connect('http://localhost:3000');
+		socket.on('news', function (data) {
+			console.log(data);
+			socket.emit('my other event', { my: 'data' });
+		});
+	</script>
+</body>
+</html>
