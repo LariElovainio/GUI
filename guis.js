@@ -1,5 +1,5 @@
-var lat = -34.397;
-var lon = 150.644;
+var lat = 0;
+var lon = 0;
 
 $(function(){
 	console.log('Starrrt.');
@@ -44,11 +44,13 @@ $(function(){
 			$('.numberOfPeople').text( '0' );
 		}
 		if( data.general.location ) {
-			lat = data.general.location.lat;
-			lon = data.general.location.lon;
-			$('.lat').text(  lat.toFixed(5) );
-			$('.lon').text( lon.toFixed(5) );
-			initialize();
+			if ( lat != data.general.location.lat || lon != data.general.location.lon ) {
+				lat = data.general.location.lat;
+				lon = data.general.location.lon;
+				$('.lat').text(  lat.toFixed(5) );
+				$('.lon').text( lon.toFixed(5) );
+				initialize();
+			}
 		} else {
 			$('.lat').text( '' );
 			$('.lon').text( '' );
