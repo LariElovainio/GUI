@@ -7,58 +7,16 @@
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkaUewn2uxKHBg96gbnzv5S-IdetKh_FA&sensor=false"></script>
 </head>
 <body>
-	<ol class="seats">
-		<li id="s1">
-			<dl class="inactive">
-				<dt>Status</dt>
-					<dd class="inUse"></dd>
-				<dt>User Status</dt>
-					<dd class="userStatus"></dd>
-				<dt>Heart Rate</dt>
-					<dd class="heartRate"></dd>
-			</dl>
-		</li>
-		<li id="s2">
-			<dl class="inactive">
-				<dt>Status</dt>
-					<dd class="inUse"></dd>
-				<dt>User Status</dt>
-					<dd class="userStatus"></dd>
-				<dt>Heart Rate</dt>
-					<dd class="heartRate"></dd>
-			</dl>
-		</li>
-		<li id="s3">
-			<dl class="inactive">
-				<dt>Status</dt>
-					<dd class="inUse"></dd>
-				<dt>User Status</dt>
-					<dd class="userStatus"></dd>
-				<dt>Heart Rate</dt>
-					<dd class="heartRate"></dd>
-			</dl>
-		</li>
-		<li id="s4">
-			<dl class="inactive">
-				<dt>Status</dt>
-					<dd class="inUse"></dd>
-				<dt>User Status</dt>
-					<dd class="userStatus"></dd>
-				<dt>Heart Rate</dt>
-					<dd class="heartRate"></dd>
-			</dl>
-		<li id="s5">
-			<dl class="inactive">
-				<dt>Status</dt>
-					<dd class="inUse"></dd>
-				<dt>User Status</dt>
-					<dd class="userStatus"></dd>
-				<dt>Heart Rate</dt>
-					<dd class="heartRate"></dd>
-			</dl>
-		</li>
-	</ol>
-	<p class="general">
+	<div class="general">
+		<h2>Situational Status</h2>
+		<label>
+			Emergency Type
+			<output class="">Car crash</output>
+		</label>
+		<label>
+			Car Model
+			<output class="">Audi A8</output>
+		</label>
 		<label>
 			Number of People
 			<output class="numberOfPeople">0</output>
@@ -71,8 +29,63 @@
 			Longitude
 			<output class="lon"></output>
 		</label>
-	</p>
+	</div>
 	<div id="map-canvas"></div>
+	<div class="details">
+		<h2>Victim Status</h2>
+		<ol class="seats">
+			<li id="s1">
+				<dl class="inactive">
+					<dt>Status</dt>
+						<dd class="inUse"></dd>
+					<dt>User Status</dt>
+						<dd class="userStatus"></dd>
+					<dt>Heart Rate</dt>
+						<dd class="heartRate"></dd>
+				</dl>
+			</li>
+			<li id="s2">
+				<dl class="inactive">
+					<dt>Status</dt>
+						<dd class="inUse"></dd>
+					<dt>User Status</dt>
+						<dd class="userStatus"></dd>
+					<dt>Heart Rate</dt>
+						<dd class="heartRate"></dd>
+				</dl>
+			</li>
+			<li id="s3">
+				<dl class="inactive">
+					<dt>Status</dt>
+						<dd class="inUse"></dd>
+					<dt>User Status</dt>
+						<dd class="userStatus"></dd>
+					<dt>Heart Rate</dt>
+						<dd class="heartRate"></dd>
+				</dl>
+			</li>
+			<li id="s4">
+				<dl class="inactive">
+					<dt>Status</dt>
+						<dd class="inUse"></dd>
+					<dt>User Status</dt>
+						<dd class="userStatus"></dd>
+					<dt>Heart Rate</dt>
+						<dd class="heartRate"></dd>
+				</dl>
+			<li id="s5">
+				<dl class="inactive">
+					<dt>Status</dt>
+						<dd class="inUse"></dd>
+					<dt>User Status</dt>
+						<dd class="userStatus"></dd>
+					<dt>Heart Rate</dt>
+						<dd class="heartRate"></dd>
+				</dl>
+			</li>
+		</ol>
+		<a href="#" class="btn big-btn">Mic</a>
+	</div>
 	<!--<script src="http://localhost:3000/socket.io/socket.io.js"></script>-->
 	<script src="http://10.100.29.129:3000/socket.io/socket.io.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

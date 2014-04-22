@@ -5,9 +5,48 @@ html {
     font-weight: 300;
 }
 
-.seats {
-    margin: 1em auto;
-    width: auto;
+.general,
+#map-canvas {
+    bottom: 0;
+    left: 0;
+	margin: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: 50;
+}
+
+.general output {
+	font-size: 2em;
+}
+
+output.numberOfPeople {
+	font-size: 6em;
+	font-weight: 100;
+}
+
+#map-canvas {
+	border-right: 1px solid rgba(0,0,0,.3);
+    z-index: 20;
+}
+
+.details {
+    bottom: 0;
+	margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 70;
+}
+
+h2 {
+    background: rgba(200,201,204,.95);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    box-shadow: 0 .1em .05em rgba(0,0,0,.07);
+    margin: 0 0 1em;
+    padding: .5em 0;
+    text-align: center;
 }
 
 .seats > li {
@@ -31,6 +70,7 @@ html {
 }
 
 dl {
+    background: #f9fbfe;
     border-radius: .2em;
     height: 96%;
     margin: 0;
@@ -57,6 +97,7 @@ dd:first-of-type {
 }
 
 dt {
+    display: none;
     font-weight: 500;
 }
 
@@ -64,39 +105,54 @@ dd {
     margin: 0;
 }
 
-.heartrate {
-    display: none;
-}
-
-.heartrate + dd {
-    background: #ccc;
+.heartRate {
     bottom: 0;
-    color: #eee;
+    font-size: 1.5em;
     font-weight: 400;
-    height: 2em;
+    height: 2.3em;
     left: 0;
     position: absolute;
     right: 0;
     text-align: center;
 }
 
-.general {
-	clear: both;
-	margin: 1em auto;
+.heartRate:after {
+    content: "bpm";
+    display: block;
+    font-size: .4em;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
-.general output {
-	font-size: 2em;
+.btn {
+    background: linear-gradient(180deg, #f3c834, #d39503);
+    border-radius: .4em;
+    box-shadow:
+        0 .2em .5em rgba(0,0,0,.15),
+        0 .1em .3em rgba(0,0,0,.2);
+    color: #000;
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: .07em;
+    padding: .6em 1.2em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-output.numberOfPeople {
-	font-size: 6em;
-	font-weight: 100;
+.btn:active {
+    box-shadow:
+        0 0 .5em rgba(0,0,0,.15),
+        inset 0 .1em .2em rgba(0,0,0,.2);
+    top: 1px;
 }
 
-#map-canvas {
-	border: 1px solid rgba(0,0,0,.3);
-	height: 14em;
-	margin: 1em auto;
-	width: auto;
+.big-btn {
+    display: block;
+    clear: both;
+    font-size: 1.25em;
+    margin: 1em;
+    padding: 1em 0;
+    text-align: center;
 }
