@@ -1,7 +1,8 @@
 var socket;
 
 $(function(){
-	socket = io.connect('http://localhost:3000');
+	//socket = io.connect('http://localhost:3000');
+	socket = io.connect('http://10.100.29.129:3000');
 	var numberOfPeople = 0;
 	var location = {
 		lat: '',
