@@ -72,7 +72,8 @@ function initialize() {
 	var latlng = new google.maps.LatLng(lat, lon);
 	var mapOptions = {
 		zoom: 13,
-		center: latlng
+		center: latlng,
+		disableDefaultUI: true
 	};
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
