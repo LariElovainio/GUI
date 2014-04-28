@@ -24,6 +24,9 @@ $(function(){
 	});*/
 
 	var s1 = document.querySelectorAll('#s1')[0];
+	socket.on('updateSensor', function (data) {
+		console.log(data);
+	});
 	socket.on('update', function (data) {
 		console.log(data);
 		if( ! data.seatNumber || ! data.feature ) {
