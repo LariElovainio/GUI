@@ -3,6 +3,11 @@ var lon = 0;
 
 $(function(){
 	console.log('Starrrt.');
+	
+	$('.toggle-btn').click( function() {
+		$(this).toggleClass('active');
+	});
+	
 	//var socket = io.connect('http://localhost:3000');
 	var socket = io.connect('http://10.100.29.129:3000');
 	/*socket.on('news', function (data) {
