@@ -4,6 +4,8 @@ var lon = 0;
 $(function(){
 	console.log('Starrrt.');
 	
+	$('<p class="sensor">Sensor <output class="data" /></p>').appendTo( $('.details') );
+	
 	$('.toggle-btn').click( function() {
 		$(this).toggleClass('active');
 	});
@@ -26,6 +28,7 @@ $(function(){
 	var s1 = document.querySelectorAll('#s1')[0];
 	socket.on('updateSensor', function (data) {
 		console.log(data);
+		$('.sensor .data').text( data );
 	});
 	socket.on('update', function (data) {
 		console.log(data);
