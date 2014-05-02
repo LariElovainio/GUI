@@ -103,6 +103,7 @@ dt {
 
 dd {
     margin: 0;
+    text-align: center;
 }
 
 .heartRate {
@@ -129,6 +130,7 @@ dd {
     background: linear-gradient(180deg, #f3c834, #d39503);
     border-radius: .4em;
     box-shadow:
+        0 .1em .2em rgba(0,0,0,.1),
         0 .2em .5em rgba(0,0,0,.15),
         0 .1em .3em rgba(0,0,0,.2);
     color: #000;
@@ -144,15 +146,13 @@ dd {
 .btn:active,
 .btn.active {
     box-shadow:
-        0 0 .5em rgba(0,0,0,.15),
-        inset 0 .1em .2em rgba(0,0,0,.2);
+        0 0 .5em rgba(0,0,0,.15);
     top: 1px;
 }
 
 .btn.led.active {
     box-shadow:
-        0 0 .5em rgba(0,0,0,.15),
-        inset 0 .1em .2em rgba(0,0,0,.25),
+        0 .1em .2em rgba(0,0,0,.35),
         inset 0 0 4em rgba(255,255,255,.2),
         0 0 .85em #f3c834,
         0 0 .1em #f3c834;
