@@ -1,0 +1,91 @@
+html {
+	background: #343639;
+	color: #eee;
+	font-family: "Avenir Next", Avenir, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.screen {
+	background: #45474c;
+	background: url('images/sunshine-natureblur.jpg') no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 98vh;
+	padding: 1vh 0;
+	position: relative;
+	width: 100%;
+}
+
+nav {
+	bottom: 5em;
+	left: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: 200;
+	left: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+}
+
+a {
+	color: #fec323;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #dea300;
+}
+
+.current {
+	opacity: .5;
+}
+
+.btn {
+	background: #fec323;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: .3em;
+	color: #222;
+	padding: .1em .4em;
+}
+
+.btn:hover {
+	background: #dea300;
+	color: #222;
+}
+
+.msg {
+  color: white;
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.icon {
+	font-size: 4em;
+	margin: 0;
+}
+
+.nav {
+    color: #666;
+    font-size: 6em;
+    left: 1%;
+    position: absolute;
+    top: 45%;
+}
+
+.next {
+    left: auto;
+    right: 1%;
+}
